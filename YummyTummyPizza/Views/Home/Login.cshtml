@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in - Yummy Tummy Pizza</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/site.css" rel="stylesheet">
+
+    <script src="/Scripts/modernizr-2.8.3.js"></script>
+
+
+
+    <div class="container body-content">
+
+
+
+        <h2>Log in.</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <section id="loginForm">
+                    <form action="/Account/Login" class="form-horizontal" method="post" role="form" novalidate="novalidate">
+                        <input name="__RequestVerificationToken" type="hidden" value="J-rZvBrUwf3nWCJN6Xi3-T9_frwsoTHNZI3YvmiMk492kwBcSG62nsHSX_2tdUHJjNls7Bqlg3BvhARxd8PrHwGTlnwVu7n7GcGfEkm4r9I1">                <h4>Use a local account to log in.</h4>
+                        <hr>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="Email">Email</label>
+                            <div class="col-md-10">
+                                <input class="form-control" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" type="text" value="">
+                                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2 control-label" for="Password">Password</label>
+                            <div class="col-md-10">
+                                <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" type="password">
+                                <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <div class="checkbox">
+                                    <input data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true"><input name="RememberMe" type="hidden" value="false">
+                                    <label for="RememberMe">Remember me?</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                <input type="submit" value="Log in" class="btn btn-default">
+                            </div>
+                        </div>
+                        <p>
+                            <a href="/Home/SignUp">Register as a new user</a>
+                        </p>
+                    </form>
+                </section>
+            </div>
+            
+        </div>
+                       
+    </div>
+
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <script src="/Scripts/bootstrap.js"></script>
+
+
+    <script src="/Scripts/jquery.validate.js"></script>
+    <script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+
+
+
+
+</body>
+</html>

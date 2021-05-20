@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - YUMMY TUMMY</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: cadetblue;
+        }
+
+            .navbar a {
+                float: left;
+                font-size: 16px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+
+
+                .navbar a:hover, .dropdown:hover .dropbtn {
+                    background-color: black;
+                }
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="~/Home/Index">YUMMY TUMMY PIZZA</a>
+        <a href="~/Home/Menu">Menu</a>
+
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <a href="~/Home/MyOrder">
+
+                <shadow class="fas fa-shopping-cart pl-0">My Order</shadow>
+            </a>
+
+            <a href="~/Home/SignUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            <a href="~/Home/Login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </ul>
+
+    </div>
+    <div class="container body-content">
+        <div>
+            @RenderBody()
+            <hr />
+
+            <footer>
+                <div class="row">
+                    <p>&copy; @DateTime.Now.Year - YUMMY TUMMY PIZZA</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

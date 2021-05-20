@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+}
+<h1> YUMMY PIZZA!!</h1>
+<h3> HAVE A CHESSY LICKY BITES!!</h3>
+<h2> Menu</h2>
+<!DOCTYPE html>
+<html>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        {
+            box-sizing: content-box;
+        }
+
+        /* Create three equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 10px;
+            height: 500px; /* Should be removed. Only for demonstration */
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            padding: 10px;
+            clear: both;
+        }
+        /*image alignment*/
+    </style>
+</head>
+<body>
+
+    <h2></h2>
+
+    <div class="row">
+        <div class="column" style="background-color: ghostwhite;">
+            <h2>Veg Pizza</h2>
+
+            <img src="~/Content/Images/Peppy_Paneer.jpg" style="width:300px;height:300px"><br />
+            <a href="~/Home/VegPizza" class="btn btn-primary custom-btn">View All</a>
+
+
+        </div>
+        <div class="column" style="background-color: ghostwhite;">
+            <h2>Non Veg Pizza</h2>
+            <img src="~/Content/Images/Dominator.jpg" style="width:300px;height:300px"><br />
+            <a href="~/Home/NonVegPizza" class="btn btn-primary custom-btn">View All</a>
+        </div>
+        <div class="column" style="background-color: ghostwhite;">
+            <h2>Sides</h2>
+            <img src="~/Content/Images/stuffed-garlic-breadstick_1346070564.jpg" style="width:300px;height:300px"><br />
+            <a href="~/Home/Sides" class="btn btn-primary custom-btn">View All</a>
+        </div>
+    </div>
+
+</body>
+</html>
+

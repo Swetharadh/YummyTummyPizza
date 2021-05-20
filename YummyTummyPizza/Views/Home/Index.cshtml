@@ -1,0 +1,89 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    @*<style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 80px;
+            text-align: left;
+            background: #5f9ea0;
+            color: white;
+        }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 40px;
+            }
+    </style>*@
+</head>
+<body>
+
+    @*<div class="header">
+        <h1>Yummy Pizza</h1>
+        <p>Have a cheesy licky bites!!</p>
+        <a href="~/Home/Menu" class="btn btn-success" role="button">Get in!!</a>
+
+
+    </div>*@<br />
+          <div id="themeSlider" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                  <li data-target="#themeSlider" data-slide-to="0" class="active"></li>
+                  <li data-target="#themeSlider" data-slide-to="1"></li>
+                  <li data-target="#themeSlider" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                  <div class="item active">
+                      <div class="imgOverlay"></div>
+                      <img style="height:320px;width:100%"
+                      src="~/Content/Images/IMAGE 1.jpg" alt="First slide">
+                      <div class="carousel-caption">
+                          <h3>New</h3>
+
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="imgOverlay"></div>
+                      <img style="height:320px;width:100%"src="~/Content/Images/image 2.jpg" alt="Second slide">
+                      <div class="carousel-caption">
+                          <h3>My Phone</h3>
+
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="imgOverlay"></div>
+                      <img style="height:320px;width:100%"src="~/Content/Images/image 3.jpg"  alt="Third slide">
+                      <div class="carousel-caption">
+                          <h3>Latest</h3>
+
+                      </div>
+                  </div>
+              </div>
+              <a class="left carousel-control" href="#themeSlider" data-slide="prev">
+                  <span class="fa fa-chevron-left"></span>
+              </a>
+              <a class="right carousel-control" href="#themeSlider" data-slide="next">
+                  <span class="fa fa-chevron-right"></span>
+              </a>
+
+          </div>
+</body>
+</html>
